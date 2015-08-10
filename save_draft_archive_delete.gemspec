@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.name        = "save_draft_archive_delete"
   s.version     = SaveDraftArchiveDelete::VERSION
   s.authors     = ["Jesse Farmer"]
-  s.email       = ["jessethebuilder@yahoo.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of SaveDraftArchiveDelete."
-  s.description = "TODO: Description of SaveDraftArchiveDelete."
+  s.email       = ["jesse@anysoft.us"]
+  s.homepage    = "http://anysoft.us"
+  s.summary     = "Add Save Draft Archive Delete functionality to any Model"
+  s.description = "Add Save Draft Archive Delete functionality to any Model"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]

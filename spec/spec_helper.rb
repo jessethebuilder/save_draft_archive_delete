@@ -32,6 +32,6 @@ RSpec.configure do |config|
     c.syntax = [:should, :expect]
   end
 
-  config.include RequestSpecHelper
+  # config.include RequestSpecHelper
 
 end
