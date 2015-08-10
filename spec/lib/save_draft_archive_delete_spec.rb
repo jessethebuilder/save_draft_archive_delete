@@ -1,9 +1,7 @@
-require "save_draft_archive_delete/engine"
+require 'rails_helper'
 
-module SaveDraftArchiveDelete
-  #extend in model
-
-  def self.extended(klass)
+describe 'SaveDraftArchiveDelete' do
+    def self.extended(klass)
     klass.instance_eval do
 
       define_method(:publish) do
@@ -62,4 +60,5 @@ module SaveDraftArchiveDelete
   def active
     where(:archived => false)
   end
+
 end
