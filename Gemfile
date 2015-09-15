@@ -13,6 +13,9 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
+gem 'farm_slugs', :git => 'https://github.com/jessethebuilder/farm_slugs'
+# gem 'farm_tools', :path => 'C:\Users\Bucky\Desktop\jesseweb\farm_tools\farm_tools'
+
 group :test, :development do
   gem 'faker'
   gem 'rspec-rails'
@@ -34,7 +37,7 @@ end
 
 group :production do
   # gem 'faker'
-  gem 'rails_12factor'
+  # gem 'rails_12factor'
 end
 
 ruby '2.1.5'

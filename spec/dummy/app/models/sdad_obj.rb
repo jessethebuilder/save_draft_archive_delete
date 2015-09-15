@@ -1,3 +1,4 @@
 class SdadObj < ActiveRecord::Base
-  save_draft_archive_delete
+  # extend SaveDraftArchiveDelete
+  save_draft_archive_delete  
 end

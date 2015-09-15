@@ -1,6 +1,15 @@
 require "save_draft_archive_delete/engine"
+require 'save_draft_archive_delete/save_draft_archive_delete_helper'
 
-module SaveDraftArchiveDelete
+class ApplicationController
+  # include SaveDraftArchiveDeleteHelper
+end
+
+def save_draft_archive_delete
+  extend SaveDraftArchiveDeleteClassMethods
+end
+  
+module SaveDraftArchiveDeleteClassMethods
   #extend in model
 
   def self.extended(klass)
@@ -63,3 +72,4 @@ module SaveDraftArchiveDelete
     where(:archived => false)
   end
 end
+
